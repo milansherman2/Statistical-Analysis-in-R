@@ -10,8 +10,10 @@ Exploring predictive metrics in  baseball
 In the end, I focused in the following research question:
 - What batting metrics are most highly correlated with runs scored? Which metrics are most predictive of winning or losing?
 
-<h2>Data</h2>
-- MLB Batting Stats by Game 1901-2021: https://www.kaggle.com/datasets/darinhawley/mlb-batting-stats-by-game-19012021
-- Moneyball: https://www.kaggle.com/datasets/wduckett/moneyball-mlb-stats-19622012
+<h2>Data</h2>  
+
+Below are the datasets that I used for this analysis:  
+- MLB Batting Stats by Game 1901-2021: https://www.kaggle.com/datasets/darinhawley/mlb-batting-stats-by-game-19012021  
+- Moneyball: https://www.kaggle.com/datasets/wduckett/moneyball-mlb-stats-19622012  
 - MLB Game Logs (1871-2016): https://data.world/dataquest/mlb-game-logs
 
