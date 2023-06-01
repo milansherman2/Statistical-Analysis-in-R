@@ -43,4 +43,49 @@ My approach was to generate these metrics by team by game for the two datasets t
 <h2>Results</h2>
 <b>MLB Batting Stats by Game 1901-2021</b>
 
+Relationship between Batting Metrics and Runs Scored
+
+Metric | Correlation | R^2 | Slope |
+| --- | :---: | :---: | :---: |
+Batting Average | 0.731 | 0.53 | 28.46 |
+Slugging Percentage | 0.764 | 0.58 | 16.13 |
+On-base Percentage | 0.745 | 0.56 | 27.53 |
+Base-out Percentage | 0.834 | 0.70 | 9.15 |
+
+<b>MLB Game Logs 1871-2016</b>
+
+Relationship between Batting Metrics and Runs Scored
+
+Metric | Correlation | R^2 | Slope |
+| --- | :---: | :---: | :---: |
+Batting Average | 0.731 | 0.53 | 28.79 |
+Slugging Percentage | 0.758 | 0.58 | 16.30 |
+On-base Percentage | 0.745 | 0.56 | 27.83 |
+Base-out Percentage | 0.836 | 0.70 | 9.32 |
+
+
+<b>MoneyBall Dataset</b>
+
+Relationship between Batting Metrics and Runs Scored
+
+Metric | Correlation | R^2 | Slope |
+| --- | :---: | :---: | :---: |
+Batting Average | 0.827 | 0.68 | 5864.84 |
+Slugging Percentage | 0.919 | 0.84 | 2527.92 |
+On-base Percentage | 0.900 | 0.81 | 5490.39 |
+
+Relationship between Batting Metrics and Wins
+
+Metric | Correlation | R^2 | Slope |
+| --- | :---: | :---: | :---: |
+Batting Average | 0.409 | 0.17 | 362.83 |
+Slugging Percentage | 0.401 | 0.16 | 138.29 |
+On-base Percentage | 0.482 | 0.23 | 367.75 |
+
+
+<h2>Interpretation</h2>
+<p> Each of these metrics is a significant predictor of runs scored, with a p-value of 0 for each. The slopes given by the linear models need a bit of interpretation. At face value, for example, the slope for batting average indicates that for every increase in batting average of 1, the number of runs scored is expected to increase by over 28. In most baseball games, neither team scores more than 10 runs, and in many games it’s less than 5. The issue is that in most baseball games a team’s batting average is between 0 and .4, and cannot be greater than 1. Thus, it would make more sense to interpret the slope as an increase of 2.8 runs for every 0.1 increase in batting average. A similar interpretation can be applied to each of the metrics.  Furthermore, the difference between these slope also needs interpretation. These differences are relative to the range of values for the metric. For example, batting average ranges from 0 to just above 0.6, while base-out percentage ranges from 0 to over 3. Thus, an increase of 1 in each of these metrics will impact the number of runs scored differently.</p>
+
+<p>As the intercept for all four models is negative, which is not possible, it does not make sense to try to interpret it. It is difficult by not impossible to score a run without getting hit, and thus we would expect the intercept to be just above 0 for batting average and slugging percentage. It is not possible to score a run without getting on base, and thus on-base percentage and base-out percentage should theoretically have an intercept of 0. Nonetheless, the models for each of these metrics include a small, negative intercept.</p>
+
 
