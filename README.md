@@ -27,10 +27,10 @@ Below are the datasets that I used for this analysis:
 <p>At the beginning of my project, I had identified batting average, on-base percentage, and slugging percentage as important offensive metrics to explore, but during my research I stumbled upon a lesser known metric with a lot of promise: base-out percentage. The inclusion of this metric made the analysis particularly interesting, as in theory it seemed to capture all of the important information needed to predict runs. The opportunity to determine the predictive power of relatively unknown metric was exciting.</p>
 
 Each of these metrics is defined as follows:
-- Batting Average: the proportion of at-bats that result in a hit. Walks are not considered an at-bat, and therefore are removed from consideration in this metric.
-- Slugging Percentage: a weighted batting average, weighting each hit according to the number of bases it nets.
-- On-base Percentage: the proportion of plate appearances that resulted in the hitter getting on base
-- Base-out Percentage: the ratio of bases a player nets by any means (hits, walks, stolen bases, etc.) to the number of outs they generate by any means (ground out, fly out, caught stealing, etc.)
+- <b>Batting Average:</b> the proportion of at-bats that result in a hit. Walks are not considered an at-bat, and therefore are removed from consideration in this metric.
+- <b>Slugging Percentage:</b> a weighted batting average, weighting each hit according to the number of bases it nets.
+- <b>On-base Percentage:</b> the proportion of plate appearances that resulted in the hitter getting on base
+- <b>Base-out Percentage:</b> the ratio of bases a player nets by any means (hits, walks, stolen bases, etc.) to the number of outs they generate by any means (ground out, fly out, caught stealing, etc.)
 
 
 My approach was to generate these metrics by team by game for the two datasets that are not aggregated, and use them to predict runs scored and/or winning or losing. These datasets needed to be cleaned and transformed in order to generate these metrics at that level. This was a time consuming step, as it required an in-depth understanding of what data was contained in the dataset in order to transform it into the above metrics. The third dataset was already aggregated by team by season. That step done, the analysis was focused on the following steps:
